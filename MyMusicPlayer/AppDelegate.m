@@ -7,8 +7,13 @@
 //
 
 #import "AppDelegate.h"
+#import "MusicListViewController.h"
+#import "MusicViewController.h"
+#import <MediaPlayer/MediaPlayer.h>
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) MusicListViewController *musicListVC;
 
 @end
 
@@ -16,10 +21,46 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    // Showing the App
+    [self makeWindowVisible:launchOptions];
+    
+    //Basic setup
+    [self basicSetup];
+    
+    return YES;
+}
+- (void)makeWindowVisible:(NSDictionary *)launchOption
+{
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
+    if (!_musicListVC) {
+        _musicListVC = [[UIStoryboard storyboardWithName:@"MusicList" bundle:[NSBundle mainBundle]] instantiateInitialViewController];
+    }
+    self.window.rootViewController = _musicListVC;
+    [self.window makeKeyAndVisible];
+}
+
+- (void)basicSetup
+{
+    //Remove control
+    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
+    [self becomeFirstResponder];
+}
+- (BOOL)canBecomeFirstResponder
+{
     return YES;
 }
 
+#pragma mark - Remote control
+- (void)remoteControlReceivedWithEvent:(UIEvent *)event
+{
+//    if (receivedEvent.type == UIEventTypeRemoteControl)
+    {
+        
+    }
+}
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
