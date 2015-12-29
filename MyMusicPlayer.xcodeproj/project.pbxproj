@@ -15,6 +15,12 @@
 		3C7BBF0C1C3170EF00AE732E /* MyMusicPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7BBF0B1C3170EF00AE732E /* MyMusicPlayerUITests.m */; };
 		3C9A6FD91C329016001B65E2 /* MusicListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9A6FD81C329016001B65E2 /* MusicListViewController.m */; };
 		3C9A6FDC1C329047001B65E2 /* MusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9A6FDB1C329047001B65E2 /* MusicViewController.m */; };
+		3C9A6FE11C32BB3B001B65E2 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9A6FE01C32BB3B001B65E2 /* NSString+Additions.m */; };
+		3C9A6FE41C32C1CE001B65E2 /* UIView+Animations.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9A6FE31C32C1CE001B65E2 /* UIView+Animations.m */; };
+		3C9A6FE71C32C3E6001B65E2 /* GVUserDefaults+Prooerties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9A6FE61C32C3E6001B65E2 /* GVUserDefaults+Prooerties.m */; };
+		3C9A6FEA1C32C60F001B65E2 /* BaseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9A6FE91C32C60F001B65E2 /* BaseHelper.m */; };
+		3C9A6FED1C32C7F4001B65E2 /* MusicHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9A6FEC1C32C7F4001B65E2 /* MusicHandler.m */; };
+		3C9A6FF01C32C906001B65E2 /* BaseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9A6FEF1C32C906001B65E2 /* BaseEntity.m */; };
 		60B80028803D8996D0F8AAA7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1312FD75307A3EFD5B3C1CA2 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +61,20 @@
 		3C9A6FD81C329016001B65E2 /* MusicListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicListViewController.m; sourceTree = "<group>"; };
 		3C9A6FDA1C329047001B65E2 /* MusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicViewController.h; sourceTree = "<group>"; };
 		3C9A6FDB1C329047001B65E2 /* MusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicViewController.m; sourceTree = "<group>"; };
+		3C9A6FDD1C32B5D8001B65E2 /* UIConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIConstant.h; sourceTree = "<group>"; };
+		3C9A6FDE1C32B95B001B65E2 /* MyMusicPlayer-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MyMusicPlayer-Prefix.pch"; sourceTree = "<group>"; };
+		3C9A6FDF1C32BB3B001B65E2 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
+		3C9A6FE01C32BB3B001B65E2 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
+		3C9A6FE21C32C1CE001B65E2 /* UIView+Animations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animations.h"; sourceTree = "<group>"; };
+		3C9A6FE31C32C1CE001B65E2 /* UIView+Animations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animations.m"; sourceTree = "<group>"; };
+		3C9A6FE51C32C3E6001B65E2 /* GVUserDefaults+Prooerties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GVUserDefaults+Prooerties.h"; sourceTree = "<group>"; };
+		3C9A6FE61C32C3E6001B65E2 /* GVUserDefaults+Prooerties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GVUserDefaults+Prooerties.m"; sourceTree = "<group>"; };
+		3C9A6FE81C32C60F001B65E2 /* BaseHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseHelper.h; sourceTree = "<group>"; };
+		3C9A6FE91C32C60F001B65E2 /* BaseHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseHelper.m; sourceTree = "<group>"; };
+		3C9A6FEB1C32C7F4001B65E2 /* MusicHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicHandler.h; sourceTree = "<group>"; };
+		3C9A6FEC1C32C7F4001B65E2 /* MusicHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicHandler.m; sourceTree = "<group>"; };
+		3C9A6FEE1C32C906001B65E2 /* BaseEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseEntity.h; sourceTree = "<group>"; };
+		3C9A6FEF1C32C906001B65E2 /* BaseEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseEntity.m; sourceTree = "<group>"; };
 		8C9F9F05AE2F2D5243A11E0F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +149,7 @@
 				3C7BBEE91C3170EF00AE732E /* AppDelegate.h */,
 				3C7BBEEA1C3170EF00AE732E /* AppDelegate.m */,
 				3C7BBEE71C3170EF00AE732E /* main.m */,
+				3C9A6FDE1C32B95B001B65E2 /* MyMusicPlayer-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -154,6 +175,12 @@
 		3C9A6FCB1C328F0F001B65E2 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				3C9A6FDF1C32BB3B001B65E2 /* NSString+Additions.h */,
+				3C9A6FE01C32BB3B001B65E2 /* NSString+Additions.m */,
+				3C9A6FE21C32C1CE001B65E2 /* UIView+Animations.h */,
+				3C9A6FE31C32C1CE001B65E2 /* UIView+Animations.m */,
+				3C9A6FE51C32C3E6001B65E2 /* GVUserDefaults+Prooerties.h */,
+				3C9A6FE61C32C3E6001B65E2 /* GVUserDefaults+Prooerties.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -188,6 +215,8 @@
 		3C9A6FCF1C328F0F001B65E2 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				3C9A6FEE1C32C906001B65E2 /* BaseEntity.h */,
+				3C9A6FEF1C32C906001B65E2 /* BaseEntity.m */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -195,6 +224,10 @@
 		3C9A6FD01C328F0F001B65E2 /* Handlers */ = {
 			isa = PBXGroup;
 			children = (
+				3C9A6FE81C32C60F001B65E2 /* BaseHelper.h */,
+				3C9A6FE91C32C60F001B65E2 /* BaseHelper.m */,
+				3C9A6FEB1C32C7F4001B65E2 /* MusicHandler.h */,
+				3C9A6FEC1C32C7F4001B65E2 /* MusicHandler.m */,
 			);
 			path = Handlers;
 			sourceTree = "<group>";
@@ -202,6 +235,7 @@
 		3C9A6FD11C328F0F001B65E2 /* Macros */ = {
 			isa = PBXGroup;
 			children = (
+				3C9A6FDD1C32B5D8001B65E2 /* UIConstant.h */,
 			);
 			path = Macros;
 			sourceTree = "<group>";
@@ -443,8 +477,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C9A6FDC1C329047001B65E2 /* MusicViewController.m in Sources */,
+				3C9A6FF01C32C906001B65E2 /* BaseEntity.m in Sources */,
+				3C9A6FE41C32C1CE001B65E2 /* UIView+Animations.m in Sources */,
+				3C9A6FED1C32C7F4001B65E2 /* MusicHandler.m in Sources */,
+				3C9A6FEA1C32C60F001B65E2 /* BaseHelper.m in Sources */,
 				3C7BBEEB1C3170EF00AE732E /* AppDelegate.m in Sources */,
+				3C9A6FE71C32C3E6001B65E2 /* GVUserDefaults+Prooerties.m in Sources */,
 				3C7BBEE81C3170EF00AE732E /* main.m in Sources */,
+				3C9A6FE11C32BB3B001B65E2 /* NSString+Additions.m in Sources */,
 				3C9A6FD91C329016001B65E2 /* MusicListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -580,6 +620,7 @@
 			baseConfigurationReference = 0A2116C3D6589AC38EF38AB6 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "MyMusicPlayer/MyMusicPlayer-Prefix.pch";
 				INFOPLIST_FILE = MyMusicPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ysongs.www.MyMusicPlayer;
@@ -592,6 +633,7 @@
 			baseConfigurationReference = 8C9F9F05AE2F2D5243A11E0F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "MyMusicPlayer/MyMusicPlayer-Prefix.pch";
 				INFOPLIST_FILE = MyMusicPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ysongs.www.MyMusicPlayer;

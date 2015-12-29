@@ -1,0 +1,12 @@
+//
+//  MyMusicPlayer-Prefix.pch
+//  MyMusicPlayer
+//
+//  Created by king on 15/12/29.
+//  Copyright © 2015年 songs. All rights reserved.
+//
+
+#import "UIConstant.h"
+#import "UIImageView+WebCache.h"
+#import "BaseHelper.h"
+#define APIBaseURL @"http://tinger.herokuapp.com/api"
