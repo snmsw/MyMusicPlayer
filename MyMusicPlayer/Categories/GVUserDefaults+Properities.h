@@ -1,8 +1,8 @@
 //
-//  GVUserDefaults+Prooerties.h
+//  GVUserDefaults+Properities.h
 //  MyMusicPlayer
 //
-//  Created by king on 15/12/29.
+//  Created by king on 15/12/31.
 //  Copyright © 2015年 songs. All rights reserved.
 //
 
@@ -14,7 +14,7 @@ typedef NS_ENUM(NSInteger, MusicCycleType) {
     MusicCycleTypeShuffle    = 2,
 };
 
-@interface GVUserDefaults (Prooerties)
+@interface GVUserDefaults (Properities)
 
 @property (nonatomic, copy) NSString *userLoginToken;
 @property (nonatomic, copy) NSString *userClientToken;

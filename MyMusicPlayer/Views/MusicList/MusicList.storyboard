@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EaB-hs-0dW">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="0RB-dJ-E3f">
+            <objects>
+                <navigationController id="EaB-hs-0dW" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nYL-3I-niy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="KaW-2K-ALc" kind="relationship" relationship="rootViewController" id="Lj7-x1-N2S"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tZc-C9-dtz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-392" y="346"/>
+        </scene>
+        <!--Music List View Controller-->
+        <scene sceneID="7wl-N8-qdS">
+            <objects>
+                <tableViewController storyboardIdentifier="musicList" hidesBottomBarWhenPushed="YES" id="KaW-2K-ALc" userLabel="Music List View Controller" customClass="MusicListViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="0jJ-ZD-iUt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="musicListCell" rowHeight="57" id="Amp-6M-cee" userLabel="musicListCell" customClass="MusicListCell">
+                                <rect key="frame" x="0.0" y="92" width="320" height="57"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Amp-6M-cee" id="gOQ-0b-Wxl">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSl-u9-XdR" userLabel="Music Number Label">
+                                            <rect key="frame" x="0.0" y="0.0" width="40" height="57"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="40" id="UgE-pH-dGg"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RXB-84-xrV" userLabel="Music Title Label">
+                                            <rect key="frame" x="40" y="10" width="270" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="NpZ-Gz-0EN"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMf-YH-Bql" userLabel="Music Artist Label">
+                                            <rect key="frame" x="40" y="31" width="270" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="5vr-A8-zid"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TL2-0w-893" userLabel="Music Indicator" customClass="NAKPlaybackIndicatorView">
+                                            <rect key="frame" x="0.0" y="0.0" width="40" height="57"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="40" id="gGF-WG-Wht"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="RXB-84-xrV" firstAttribute="leading" secondItem="ZSl-u9-XdR" secondAttribute="trailing" id="62T-XL-0qa"/>
+                                        <constraint firstAttribute="bottom" secondItem="TL2-0w-893" secondAttribute="bottom" id="68I-vO-b3y"/>
+                                        <constraint firstItem="TMf-YH-Bql" firstAttribute="leading" secondItem="ZSl-u9-XdR" secondAttribute="trailing" id="F4b-IQ-shI"/>
+                                        <constraint firstItem="ZSl-u9-XdR" firstAttribute="leading" secondItem="gOQ-0b-Wxl" secondAttribute="leading" id="ITe-Sz-iig"/>
+                                        <constraint firstItem="TL2-0w-893" firstAttribute="leading" secondItem="gOQ-0b-Wxl" secondAttribute="leading" id="MJV-tZ-31U"/>
+                                        <constraint firstItem="RXB-84-xrV" firstAttribute="centerY" secondItem="gOQ-0b-Wxl" secondAttribute="centerY" constant="-8" id="PuY-x7-40P"/>
+                                        <constraint firstAttribute="bottom" secondItem="ZSl-u9-XdR" secondAttribute="bottom" id="Vsh-af-trh"/>
+                                        <constraint firstAttribute="trailing" secondItem="RXB-84-xrV" secondAttribute="trailing" constant="10" id="Z03-8A-28a"/>
+                                        <constraint firstItem="TMf-YH-Bql" firstAttribute="top" secondItem="RXB-84-xrV" secondAttribute="bottom" id="dij-0W-ilc"/>
+                                        <constraint firstItem="ZSl-u9-XdR" firstAttribute="top" secondItem="gOQ-0b-Wxl" secondAttribute="top" id="hDu-cc-buu"/>
+                                        <constraint firstItem="TL2-0w-893" firstAttribute="top" secondItem="gOQ-0b-Wxl" secondAttribute="top" id="mro-5A-kxA"/>
+                                        <constraint firstAttribute="trailing" secondItem="TMf-YH-Bql" secondAttribute="trailing" constant="10" id="pE3-oG-0G0"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="musicArtistLabel" destination="TMf-YH-Bql" id="hrF-ml-K3x"/>
+                                    <outlet property="musicIndicator" destination="TL2-0w-893" id="7WB-PC-sXq"/>
+                                    <outlet property="musicNumberLabel" destination="ZSl-u9-XdR" id="Zla-Ai-dHx"/>
+                                    <outlet property="musicTitleLabel" destination="RXB-84-xrV" id="sxG-mJ-wGb"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="KaW-2K-ALc" id="wdZ-vP-HQn"/>
+                            <outlet property="delegate" destination="KaW-2K-ALc" id="26B-DI-mX4"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="bGk-iu-f9T" userLabel="Navigation Item"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ncD-8f-FPX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18" y="346"/>
+        </scene>
+    </scenes>
+</document>

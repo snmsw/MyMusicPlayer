@@ -54,18 +54,31 @@
 }
 
 #pragma mark - Remote control
-- (void)remoteControlReceivedWithEvent:(UIEvent *)event
+- (void)remoteControlReceivedWithEvent:(UIEvent *)receivedEvent
 {
-//    if (receivedEvent.type == UIEventTypeRemoteControl) {
-//        switch (receivedEvent.subtype) {
-//            case UIEventTypeRemoteControlPause:
-//                [MusicViewController shareInstance];
-//                break;
-//                
-//            default:
-//                break;
-//        }
-//    }
+    if (receivedEvent.type == UIEventTypeRemoteControl) {
+        switch (receivedEvent.subtype) {
+            case UIEventSubtypeRemoteControlPause:
+                [[MusicViewController sharedInstance].streamer pause];
+                break;
+            case UIEventSubtypeRemoteControlStop:
+                break;
+            case UIEventSubtypeRemoteControlPlay:
+                [[MusicViewController sharedInstance].streamer play];
+                break;
+            case UIEventSubtypeRemoteControlTogglePlayPause:
+                break;
+            case UIEventSubtypeRemoteControlNextTrack:
+                [[MusicViewController sharedInstance] playNextMusic:nil];
+                break;
+            case UIEventSubtypeRemoteControlPreviousTrack:
+                [[MusicViewController sharedInstance] playPreviousMusic:nil];
+                break;
+                
+            default:
+                break;
+        }
+    }
 }
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
